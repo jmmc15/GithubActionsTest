@@ -36,10 +36,10 @@ while True:
             print(Fore.BLUE + "Miles:      " + str("{:.2f}".format((json_data["route"]["distance"]))))
         elif Metrics == "K" or Metrics == "k":  
             print(Fore.BLUE + "Kilometers:      " + str("{:.2f}".format((json_data["route"]["distance"])*1.61)))
-        if Metrics == "M" or Metrics == "m":
-            print(Fore.BLUE + "Fuel Used (Gal): " + str("{:.2f}".format((json_data["route"]["fuelUsed"]))))
-        elif Metrics == "K" or Metrics == "k":
-            print(Fore.BLUE + "Fuel Used (Ltr): " + str("{:.2f}".format((json_data["route"]["fuelUsed"])*3.78)))
+        # if Metrics == "M" or Metrics == "m":
+        #     print(Fore.BLUE + "Fuel Used (Gal): " + str("{:.2f}".format((json_data["route"]["fuelUsed"]))))
+        # elif Metrics == "K" or Metrics == "k":
+        #     print(Fore.BLUE + "Fuel Used (Ltr): " + str("{:.2f}".format((json_data["route"]["fuelUsed"])*3.78)))
         #function to check if there is toll road
         def myFunction(): 
             if json_data["route"]["hasTollRoad"] == 1:
