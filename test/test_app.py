@@ -1,5 +1,6 @@
 import unittest
 import final
+import requests
 
 class TestMapQuest(unittest.TestCase):
     def test_app(self):
