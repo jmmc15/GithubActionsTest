@@ -1,6 +1,9 @@
+import io
 import unittest
+from pytest import MonkeyPatch
 import final
 import requests
+from unittest.mock import patch
 
 class TestMapQuest(unittest.TestCase):
     def test_app(self):
@@ -11,6 +14,9 @@ class TestMapQuest(unittest.TestCase):
 
     def test_api(self):
         self.assertIsNotNone(final.key, None)
+    
+    def test_input(self):
+        MonkeyPatch.setattr('sys.stdin', io.StringIO('Malolos, Bulacan'))
        
 
 if __name__ == '__main__':
