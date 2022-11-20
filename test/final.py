@@ -4,6 +4,7 @@ sys.path.append("/users/dell/appdata/local/programs/python/python39/lib/site-pac
 import requests
 import colorama
 from colorama import Fore, Back, Style
+sys.path.append("/users/dell/appdata/local/programs/python/python39/lib/site-packages")
 
 
 
