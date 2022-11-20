@@ -42,11 +42,11 @@ while True:
         #     print(Fore.BLUE + "Fuel Used (Ltr): " + str("{:.2f}".format((json_data["route"]["fuelUsed"])*3.78)))
         #function to check if there is toll road
         def myFunction(): 
-            if json_data["route"]["hasTollRoad"] == 1:
+            if json_data["route"]["hasSeasonalClosure"] == 1:
                 return Fore.BLUE + "Yes"
             else:
                 return Fore.BLUE + "No"
-        print(Fore.BLUE + "Has Toll Road:  ",myFunction())
+        print(Fore.BLUE + "Has Seasonal Closure:  ",myFunction())
         
         print("=============================================")
         #adding numbers for direction while checking metric choice
