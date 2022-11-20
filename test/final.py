@@ -3,6 +3,10 @@ import requests
 import colorama
 from colorama import Fore, Back, Style
 
+import sys
+sys.path.append("/users/dell/appdata/local/programs/python/python39/lib/site-packages")
+import requests
+
 import unittest
 
 colorama.init(autoreset=True)
